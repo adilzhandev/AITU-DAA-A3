@@ -122,6 +122,15 @@ git branch --all
 git tag --list
 ```
 
+Create the Moodle archive from the exact release (the repository link is included in this README):
+
+```bash
+mkdir -p submission
+git archive --format=zip --prefix=DAA_Assignment3_Adilzhan_Kuandykov_SE-2526/ --output=submission/DAA_Assignment3_Adilzhan_Kuandykov_SE-2526.zip v1.0
+```
+
+Upload that ZIP to Moodle. Build outputs, virtual environments, IDE settings and the local `.git` directory are excluded from the archive.
+
 ## AI-use acknowledgement
 
 The student supplied the original graph and algorithm implementations. OpenAI Codex assisted with auditing the assignment requirements, existing code and input handling, strengthening tests, improving build and benchmark methodology, generating and interpreting the charts, preparing the report and reproduction scripts, and organizing the submission. This assistance included code and documentation changes. The student is responsible for reviewing the final work and explaining the algorithms, measurements, and conclusions at the defense.
