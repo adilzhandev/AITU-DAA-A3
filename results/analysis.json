@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "csv_sha256": "e8e68dda988854dcd23b3d20df6e40fe10867747201a5c4aafee73f4d55a271c",
+  "csv_sha256": "c6adc98c26d8f3e4c2c959eeda5602ea52bc9662ead382e3d3e4337e30ef50fc",
   "row_count": 50,
   "sizes": [
     1000,
@@ -28,7 +28,7 @@
             "comparisons": 42663,
             "max_depth": 0,
             "result": 147970,
-            "time_ms": 4.764,
+            "time_ms": 6.567,
             "operations": 52908,
             "scan_share": 0.7705
           },
@@ -40,7 +40,7 @@
             "comparisons": 156296,
             "max_depth": 0,
             "result": 468911,
-            "time_ms": 9.832,
+            "time_ms": 6.075,
             "operations": 193021,
             "scan_share": 0.8845667299177735
           },
@@ -52,7 +52,7 @@
             "comparisons": 531521,
             "max_depth": 0,
             "result": 1486139,
-            "time_ms": 18.137,
+            "time_ms": 20.492,
             "operations": 657431,
             "scan_share": 0.965925
           },
@@ -64,7 +64,7 @@
             "comparisons": 1734581,
             "max_depth": 0,
             "result": 4715515,
-            "time_ms": 32.854,
+            "time_ms": 36.132,
             "operations": 2142211,
             "scan_share": 0.9908610821237707
           },
@@ -76,7 +76,7 @@
             "comparisons": 5543379,
             "max_depth": 0,
             "result": 15012094,
-            "time_ms": 127.864,
+            "time_ms": 137.653,
             "operations": 6842382,
             "scan_share": 0.99917
           }
@@ -145,10 +145,10 @@
           }
         },
         "time_ms": {
-          "min": 4.764,
-          "max": 127.864,
-          "first": 4.764,
-          "last": 127.864
+          "min": 6.075,
+          "max": 137.653,
+          "first": 6.567,
+          "last": 137.653
         }
       },
       "dense": {
@@ -161,7 +161,7 @@
             "comparisons": 257963,
             "max_depth": 0,
             "result": 30363,
-            "time_ms": 9.802,
+            "time_ms": 7.943,
             "operations": 271868,
             "scan_share": 0.2151
           },
@@ -173,7 +173,7 @@
             "comparisons": 853689,
             "max_depth": 0,
             "result": 97589,
-            "time_ms": 23.237,
+            "time_ms": 22.148,
             "operations": 900134,
             "scan_share": 0.22814674256799494
           },
@@ -185,7 +185,7 @@
             "comparisons": 2760909,
             "max_depth": 0,
             "result": 309550,
-            "time_ms": 77.282,
+            "time_ms": 42.915,
             "operations": 2895324,
             "scan_share": 0.20736
           },
@@ -197,7 +197,7 @@
             "comparisons": 8775086,
             "max_depth": 0,
             "result": 968517,
-            "time_ms": 172.826,
+            "time_ms": 197.192,
             "operations": 9379732,
             "scan_share": 0.30200803212851407
           },
@@ -209,7 +209,7 @@
             "comparisons": 27890128,
             "max_depth": 0,
             "result": 3056681,
-            "time_ms": 543.45,
+            "time_ms": 457.886,
             "operations": 30220843,
             "scan_share": 0.371786
           }
@@ -278,10 +278,10 @@
           }
         },
         "time_ms": {
-          "min": 9.802,
-          "max": 543.45,
-          "first": 9.802,
-          "last": 543.45
+          "min": 7.943,
+          "max": 457.886,
+          "first": 7.943,
+          "last": 457.886
         }
       }
     },
@@ -296,7 +296,7 @@
             "comparisons": 87546,
             "max_depth": 0,
             "result": 147970,
-            "time_ms": 5.496,
+            "time_ms": 5.022,
             "operations": 95546,
             "scan_share": 2.0
           },
@@ -308,7 +308,7 @@
             "comparisons": 321494,
             "max_depth": 0,
             "result": 468911,
-            "time_ms": 11.489,
+            "time_ms": 3.744,
             "operations": 346790,
             "scan_share": 2.0
           },
@@ -320,7 +320,7 @@
             "comparisons": 1158903,
             "max_depth": 0,
             "result": 1486139,
-            "time_ms": 15.534,
+            "time_ms": 19.514,
             "operations": 1238903,
             "scan_share": 2.0
           },
@@ -332,7 +332,7 @@
             "comparisons": 4118391,
             "max_depth": 0,
             "result": 4715515,
-            "time_ms": 60.778,
+            "time_ms": 68.457,
             "operations": 4371375,
             "scan_share": 2.0
           },
@@ -344,7 +344,7 @@
             "comparisons": 14399475,
             "max_depth": 0,
             "result": 15012094,
-            "time_ms": 324.36,
+            "time_ms": 313.072,
             "operations": 15199475,
             "scan_share": 2.0
           }
@@ -413,10 +413,10 @@
           }
         },
         "time_ms": {
-          "min": 5.496,
-          "max": 324.36,
-          "first": 5.496,
-          "last": 324.36
+          "min": 3.744,
+          "max": 313.072,
+          "first": 5.022,
+          "last": 313.072
         }
       },
       "dense": {
@@ -429,7 +429,7 @@
             "comparisons": 521435,
             "max_depth": 0,
             "result": 30363,
-            "time_ms": 9.95,
+            "time_ms": 7.934,
             "operations": 561435,
             "scan_share": 2.0
           },
@@ -441,7 +441,7 @@
             "comparisons": 1862645,
             "max_depth": 0,
             "result": 97589,
-            "time_ms": 31.333,
+            "time_ms": 26.456,
             "operations": 1989125,
             "scan_share": 2.0
           },
@@ -453,7 +453,7 @@
             "comparisons": 6571033,
             "max_depth": 0,
             "result": 309550,
-            "time_ms": 168.24,
+            "time_ms": 129.316,
             "operations": 6971033,
             "scan_share": 2.0
           },
@@ -465,7 +465,7 @@
             "comparisons": 22888172,
             "max_depth": 0,
             "result": 968517,
-            "time_ms": 530.764,
+            "time_ms": 592.956,
             "operations": 24153092,
             "scan_share": 2.0
           },
@@ -477,7 +477,7 @@
             "comparisons": 79103986,
             "max_depth": 0,
             "result": 3056681,
-            "time_ms": 2388.564,
+            "time_ms": 2419.65,
             "operations": 83103986,
             "scan_share": 2.0
           }
@@ -546,10 +546,10 @@
           }
         },
         "time_ms": {
-          "min": 9.95,
-          "max": 2388.564,
-          "first": 9.95,
-          "last": 2388.564
+          "min": 7.934,
+          "max": 2419.65,
+          "first": 7.934,
+          "last": 2419.65
         }
       }
     },
@@ -564,7 +564,7 @@
             "comparisons": 0,
             "max_depth": 626,
             "result": 27,
-            "time_ms": 3.213,
+            "time_ms": 2.735,
             "operations": 8000,
             "scan_share": 2.0
           },
@@ -576,7 +576,7 @@
             "comparisons": 0,
             "max_depth": 1871,
             "result": 137,
-            "time_ms": 8.211,
+            "time_ms": 2.462,
             "operations": 25296,
             "scan_share": 2.0
           },
@@ -588,7 +588,7 @@
             "comparisons": 0,
             "max_depth": 5925,
             "result": 373,
-            "time_ms": 6.931,
+            "time_ms": 6.698,
             "operations": 80000,
             "scan_share": 2.0
           },
@@ -600,7 +600,7 @@
             "comparisons": 0,
             "max_depth": 18671,
             "result": 1188,
-            "time_ms": 27.723,
+            "time_ms": 28.596,
             "operations": 252984,
             "scan_share": 2.0
           },
@@ -612,7 +612,7 @@
             "comparisons": 0,
             "max_depth": 59394,
             "result": 3923,
-            "time_ms": 165.096,
+            "time_ms": 144.254,
             "operations": 800000,
             "scan_share": 2.0
           }
@@ -677,10 +677,10 @@
           }
         },
         "time_ms": {
-          "min": 3.213,
-          "max": 165.096,
-          "first": 3.213,
-          "last": 165.096
+          "min": 2.462,
+          "max": 144.254,
+          "first": 2.735,
+          "last": 144.254
         }
       },
       "dense": {
@@ -693,7 +693,7 @@
             "comparisons": 0,
             "max_depth": 916,
             "result": 1,
-            "time_ms": 7.497,
+            "time_ms": 3.394,
             "operations": 40000,
             "scan_share": 2.0
           },
@@ -705,7 +705,7 @@
             "comparisons": 0,
             "max_depth": 2920,
             "result": 1,
-            "time_ms": 7.274,
+            "time_ms": 7.672,
             "operations": 126480,
             "scan_share": 2.0
           },
@@ -717,7 +717,7 @@
             "comparisons": 0,
             "max_depth": 9217,
             "result": 1,
-            "time_ms": 32.18,
+            "time_ms": 35.954,
             "operations": 400000,
             "scan_share": 2.0
           },
@@ -729,7 +729,7 @@
             "comparisons": 0,
             "max_depth": 29073,
             "result": 1,
-            "time_ms": 162.011,
+            "time_ms": 216.634,
             "operations": 1264920,
             "scan_share": 2.0
           },
@@ -741,7 +741,7 @@
             "comparisons": 0,
             "max_depth": 91920,
             "result": 1,
-            "time_ms": 716.896,
+            "time_ms": 697.304,
             "operations": 4000000,
             "scan_share": 2.0
           }
@@ -806,10 +806,10 @@
           }
         },
         "time_ms": {
-          "min": 7.274,
-          "max": 716.896,
-          "first": 7.497,
-          "last": 716.896
+          "min": 3.394,
+          "max": 697.304,
+          "first": 3.394,
+          "last": 697.304
         }
       }
     },
@@ -824,7 +824,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 1000,
-            "time_ms": 1.286,
+            "time_ms": 1.056,
             "operations": 4000,
             "scan_share": 1.0
           },
@@ -836,7 +836,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 3162,
-            "time_ms": 1.28,
+            "time_ms": 1.032,
             "operations": 12648,
             "scan_share": 1.0
           },
@@ -848,7 +848,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 10000,
-            "time_ms": 1.986,
+            "time_ms": 2.303,
             "operations": 40000,
             "scan_share": 1.0
           },
@@ -860,7 +860,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 31623,
-            "time_ms": 5.7,
+            "time_ms": 7.225,
             "operations": 126492,
             "scan_share": 1.0
           },
@@ -872,7 +872,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 100000,
-            "time_ms": 41.203,
+            "time_ms": 46.687,
             "operations": 400000,
             "scan_share": 1.0
           }
@@ -937,10 +937,10 @@
           }
         },
         "time_ms": {
-          "min": 1.28,
-          "max": 41.203,
-          "first": 1.286,
-          "last": 41.203
+          "min": 1.032,
+          "max": 46.687,
+          "first": 1.056,
+          "last": 46.687
         }
       },
       "dense": {
@@ -953,7 +953,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 1000,
-            "time_ms": 2.491,
+            "time_ms": 1.159,
             "operations": 20000,
             "scan_share": 1.0
           },
@@ -965,7 +965,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 3162,
-            "time_ms": 1.436,
+            "time_ms": 2.587,
             "operations": 63240,
             "scan_share": 1.0
           },
@@ -977,7 +977,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 10000,
-            "time_ms": 7.214,
+            "time_ms": 11.135,
             "operations": 200000,
             "scan_share": 1.0
           },
@@ -989,7 +989,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 31623,
-            "time_ms": 34.034,
+            "time_ms": 33.858,
             "operations": 632460,
             "scan_share": 1.0
           },
@@ -1001,7 +1001,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 100000,
-            "time_ms": 162.421,
+            "time_ms": 130.71,
             "operations": 2000000,
             "scan_share": 1.0
           }
@@ -1066,10 +1066,10 @@
           }
         },
         "time_ms": {
-          "min": 1.436,
-          "max": 162.421,
-          "first": 2.491,
-          "last": 162.421
+          "min": 1.159,
+          "max": 130.71,
+          "first": 1.159,
+          "last": 130.71
         }
       }
     },
@@ -1084,7 +1084,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 396274,
-            "time_ms": 3.744,
+            "time_ms": 2.269,
             "operations": 4000,
             "scan_share": 1.0
           },
@@ -1096,7 +1096,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 1271911,
-            "time_ms": 5.356,
+            "time_ms": 1.859,
             "operations": 12648,
             "scan_share": 1.0
           },
@@ -1108,7 +1108,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 3941828,
-            "time_ms": 3.542,
+            "time_ms": 4.579,
             "operations": 40000,
             "scan_share": 1.0
           },
@@ -1120,7 +1120,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 12551891,
-            "time_ms": 13.995,
+            "time_ms": 18.691,
             "operations": 126492,
             "scan_share": 1.0
           },
@@ -1132,7 +1132,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 40096539,
-            "time_ms": 65.615,
+            "time_ms": 76.932,
             "operations": 400000,
             "scan_share": 1.0
           }
@@ -1197,10 +1197,10 @@
           }
         },
         "time_ms": {
-          "min": 3.542,
-          "max": 65.615,
-          "first": 3.744,
-          "last": 65.615
+          "min": 1.859,
+          "max": 76.932,
+          "first": 2.269,
+          "last": 76.932
         }
       },
       "dense": {
@@ -1213,7 +1213,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 252411,
-            "time_ms": 2.161,
+            "time_ms": 1.739,
             "operations": 20000,
             "scan_share": 1.0
           },
@@ -1225,7 +1225,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 723157,
-            "time_ms": 2.68,
+            "time_ms": 4.723,
             "operations": 63240,
             "scan_share": 1.0
           },
@@ -1237,7 +1237,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 2381342,
-            "time_ms": 12.008,
+            "time_ms": 16.232,
             "operations": 200000,
             "scan_share": 1.0
           },
@@ -1249,7 +1249,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 7376612,
-            "time_ms": 58.574,
+            "time_ms": 74.292,
             "operations": 632460,
             "scan_share": 1.0
           },
@@ -1261,7 +1261,7 @@
             "comparisons": 0,
             "max_depth": 0,
             "result": 23512087,
-            "time_ms": 217.691,
+            "time_ms": 260.683,
             "operations": 2000000,
             "scan_share": 1.0
           }
@@ -1326,10 +1326,10 @@
           }
         },
         "time_ms": {
-          "min": 2.161,
-          "max": 217.691,
-          "first": 2.161,
-          "last": 217.691
+          "min": 1.739,
+          "max": 260.683,
+          "first": 1.739,
+          "last": 260.683
         }
       }
     }

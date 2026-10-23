@@ -1,0 +1,511 @@
+{
+  "schema_version": 1,
+  "csv_sha256": "b98cb13a6ce60e18afe75d0469c1e200d59adcad38e4942b235ab4902ddac809",
+  "row_count": 40,
+  "sizes": [
+    1000,
+    3162,
+    10000,
+    31623,
+    100000
+  ],
+  "density_multipliers": {
+    "sparse": 4,
+    "dense": 20
+  },
+  "counter_scope": "Kosaraju counts two DFS passes (2m); Tarjan one DFS pass (m). Condensation counts only contraction (m), excluding its Tarjan call. DAG longest paths count relaxation edges, excluding topological sorting and indegree setup.",
+  "fit_definition": "OLS on log10(edge_scans) versus log10(original_n), all five sizes.",
+  "series": {
+    "Kosaraju": {
+      "sparse": {
+        "points": [
+          {
+            "n": 1000,
+            "m": 4000,
+            "dsu_ops": 0,
+            "edge_scans": 8000,
+            "comparisons": 0,
+            "max_depth": 626,
+            "result": 27,
+            "time_ms": 4.073,
+            "original_n": 1000,
+            "original_m": 4000
+          },
+          {
+            "n": 3162,
+            "m": 12648,
+            "dsu_ops": 0,
+            "edge_scans": 25296,
+            "comparisons": 0,
+            "max_depth": 1871,
+            "result": 137,
+            "time_ms": 3.971,
+            "original_n": 3162,
+            "original_m": 12648
+          },
+          {
+            "n": 10000,
+            "m": 40000,
+            "dsu_ops": 0,
+            "edge_scans": 80000,
+            "comparisons": 0,
+            "max_depth": 5925,
+            "result": 373,
+            "time_ms": 14.106,
+            "original_n": 10000,
+            "original_m": 40000
+          },
+          {
+            "n": 31623,
+            "m": 126492,
+            "dsu_ops": 0,
+            "edge_scans": 252984,
+            "comparisons": 0,
+            "max_depth": 18671,
+            "result": 1188,
+            "time_ms": 28.455,
+            "original_n": 31623,
+            "original_m": 126492
+          },
+          {
+            "n": 100000,
+            "m": 400000,
+            "dsu_ops": 0,
+            "edge_scans": 800000,
+            "comparisons": 0,
+            "max_depth": 59394,
+            "result": 3923,
+            "time_ms": 144.307,
+            "original_n": 100000,
+            "original_m": 400000
+          }
+        ],
+        "fits": {
+          "edge_scans": {
+            "slope": 0.9999999999999996,
+            "intercept_log10": 0.9030899869919427,
+            "r_squared": 1.0
+          }
+        }
+      },
+      "dense": {
+        "points": [
+          {
+            "n": 1000,
+            "m": 20000,
+            "dsu_ops": 0,
+            "edge_scans": 40000,
+            "comparisons": 0,
+            "max_depth": 916,
+            "result": 1,
+            "time_ms": 4.519,
+            "original_n": 1000,
+            "original_m": 20000
+          },
+          {
+            "n": 3162,
+            "m": 63240,
+            "dsu_ops": 0,
+            "edge_scans": 126480,
+            "comparisons": 0,
+            "max_depth": 2920,
+            "result": 1,
+            "time_ms": 16.447,
+            "original_n": 3162,
+            "original_m": 63240
+          },
+          {
+            "n": 10000,
+            "m": 200000,
+            "dsu_ops": 0,
+            "edge_scans": 400000,
+            "comparisons": 0,
+            "max_depth": 9217,
+            "result": 1,
+            "time_ms": 42.547,
+            "original_n": 10000,
+            "original_m": 200000
+          },
+          {
+            "n": 31623,
+            "m": 632460,
+            "dsu_ops": 0,
+            "edge_scans": 1264920,
+            "comparisons": 0,
+            "max_depth": 29073,
+            "result": 1,
+            "time_ms": 141.986,
+            "original_n": 31623,
+            "original_m": 632460
+          },
+          {
+            "n": 100000,
+            "m": 2000000,
+            "dsu_ops": 0,
+            "edge_scans": 4000000,
+            "comparisons": 0,
+            "max_depth": 91920,
+            "result": 1,
+            "time_ms": 711.156,
+            "original_n": 100000,
+            "original_m": 2000000
+          }
+        ],
+        "fits": {
+          "edge_scans": {
+            "slope": 0.9999999999999994,
+            "intercept_log10": 1.602059991327963,
+            "r_squared": 1.0
+          }
+        }
+      }
+    },
+    "Tarjan": {
+      "sparse": {
+        "points": [
+          {
+            "n": 1000,
+            "m": 4000,
+            "dsu_ops": 0,
+            "edge_scans": 4000,
+            "comparisons": 0,
+            "max_depth": 626,
+            "result": 27,
+            "time_ms": 1.184,
+            "original_n": 1000,
+            "original_m": 4000
+          },
+          {
+            "n": 3162,
+            "m": 12648,
+            "dsu_ops": 0,
+            "edge_scans": 12648,
+            "comparisons": 0,
+            "max_depth": 1871,
+            "result": 137,
+            "time_ms": 1.603,
+            "original_n": 3162,
+            "original_m": 12648
+          },
+          {
+            "n": 10000,
+            "m": 40000,
+            "dsu_ops": 0,
+            "edge_scans": 40000,
+            "comparisons": 0,
+            "max_depth": 5925,
+            "result": 373,
+            "time_ms": 3.444,
+            "original_n": 10000,
+            "original_m": 40000
+          },
+          {
+            "n": 31623,
+            "m": 126492,
+            "dsu_ops": 0,
+            "edge_scans": 126492,
+            "comparisons": 0,
+            "max_depth": 18671,
+            "result": 1188,
+            "time_ms": 8.8,
+            "original_n": 31623,
+            "original_m": 126492
+          },
+          {
+            "n": 100000,
+            "m": 400000,
+            "dsu_ops": 0,
+            "edge_scans": 400000,
+            "comparisons": 0,
+            "max_depth": 59394,
+            "result": 3923,
+            "time_ms": 95.327,
+            "original_n": 100000,
+            "original_m": 400000
+          }
+        ],
+        "fits": {
+          "edge_scans": {
+            "slope": 0.9999999999999996,
+            "intercept_log10": 0.6020599913279616,
+            "r_squared": 1.0
+          }
+        }
+      },
+      "dense": {
+        "points": [
+          {
+            "n": 1000,
+            "m": 20000,
+            "dsu_ops": 0,
+            "edge_scans": 20000,
+            "comparisons": 0,
+            "max_depth": 916,
+            "result": 1,
+            "time_ms": 1.235,
+            "original_n": 1000,
+            "original_m": 20000
+          },
+          {
+            "n": 3162,
+            "m": 63240,
+            "dsu_ops": 0,
+            "edge_scans": 63240,
+            "comparisons": 0,
+            "max_depth": 2920,
+            "result": 1,
+            "time_ms": 3.885,
+            "original_n": 3162,
+            "original_m": 63240
+          },
+          {
+            "n": 10000,
+            "m": 200000,
+            "dsu_ops": 0,
+            "edge_scans": 200000,
+            "comparisons": 0,
+            "max_depth": 9217,
+            "result": 1,
+            "time_ms": 13.853,
+            "original_n": 10000,
+            "original_m": 200000
+          },
+          {
+            "n": 31623,
+            "m": 632460,
+            "dsu_ops": 0,
+            "edge_scans": 632460,
+            "comparisons": 0,
+            "max_depth": 29073,
+            "result": 1,
+            "time_ms": 45.319,
+            "original_n": 31623,
+            "original_m": 632460
+          },
+          {
+            "n": 100000,
+            "m": 2000000,
+            "dsu_ops": 0,
+            "edge_scans": 2000000,
+            "comparisons": 0,
+            "max_depth": 91920,
+            "result": 1,
+            "time_ms": 170.297,
+            "original_n": 100000,
+            "original_m": 2000000
+          }
+        ],
+        "fits": {
+          "edge_scans": {
+            "slope": 1.0,
+            "intercept_log10": 1.3010299956639784,
+            "r_squared": 1.0
+          }
+        }
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "original_n": 1000,
+      "original_m": 4000,
+      "density": "sparse",
+      "components": 27,
+      "condensed_edges": 28,
+      "critical_weight": 3053,
+      "kosaraju_scans": 8000,
+      "tarjan_scans": 4000,
+      "scan_saving_fraction": 0.5,
+      "kosaraju_time_ms": 4.073,
+      "tarjan_time_ms": 1.184,
+      "tarjan_over_kosaraju_time": 0.2906948195433341
+    },
+    {
+      "original_n": 1000,
+      "original_m": 20000,
+      "density": "dense",
+      "components": 1,
+      "condensed_edges": 0,
+      "critical_weight": 0,
+      "kosaraju_scans": 40000,
+      "tarjan_scans": 20000,
+      "scan_saving_fraction": 0.5,
+      "kosaraju_time_ms": 4.519,
+      "tarjan_time_ms": 1.235,
+      "tarjan_over_kosaraju_time": 0.27329055100685995
+    },
+    {
+      "original_n": 3162,
+      "original_m": 12648,
+      "density": "sparse",
+      "components": 137,
+      "condensed_edges": 149,
+      "critical_weight": 2992,
+      "kosaraju_scans": 25296,
+      "tarjan_scans": 12648,
+      "scan_saving_fraction": 0.5,
+      "kosaraju_time_ms": 3.971,
+      "tarjan_time_ms": 1.603,
+      "tarjan_over_kosaraju_time": 0.40367665575421807
+    },
+    {
+      "original_n": 3162,
+      "original_m": 63240,
+      "density": "dense",
+      "components": 1,
+      "condensed_edges": 0,
+      "critical_weight": 0,
+      "kosaraju_scans": 126480,
+      "tarjan_scans": 63240,
+      "scan_saving_fraction": 0.5,
+      "kosaraju_time_ms": 16.447,
+      "tarjan_time_ms": 3.885,
+      "tarjan_over_kosaraju_time": 0.23621329117772238
+    },
+    {
+      "original_n": 10000,
+      "original_m": 40000,
+      "density": "sparse",
+      "components": 373,
+      "condensed_edges": 409,
+      "critical_weight": 3779,
+      "kosaraju_scans": 80000,
+      "tarjan_scans": 40000,
+      "scan_saving_fraction": 0.5,
+      "kosaraju_time_ms": 14.106,
+      "tarjan_time_ms": 3.444,
+      "tarjan_over_kosaraju_time": 0.24415142492556358
+    },
+    {
+      "original_n": 10000,
+      "original_m": 200000,
+      "density": "dense",
+      "components": 1,
+      "condensed_edges": 0,
+      "critical_weight": 0,
+      "kosaraju_scans": 400000,
+      "tarjan_scans": 200000,
+      "scan_saving_fraction": 0.5,
+      "kosaraju_time_ms": 42.547,
+      "tarjan_time_ms": 13.853,
+      "tarjan_over_kosaraju_time": 0.32559287376313256
+    },
+    {
+      "original_n": 31623,
+      "original_m": 126492,
+      "density": "sparse",
+      "components": 1188,
+      "condensed_edges": 1299,
+      "critical_weight": 3952,
+      "kosaraju_scans": 252984,
+      "tarjan_scans": 126492,
+      "scan_saving_fraction": 0.5,
+      "kosaraju_time_ms": 28.455,
+      "tarjan_time_ms": 8.8,
+      "tarjan_over_kosaraju_time": 0.3092602354594975
+    },
+    {
+      "original_n": 31623,
+      "original_m": 632460,
+      "density": "dense",
+      "components": 1,
+      "condensed_edges": 0,
+      "critical_weight": 0,
+      "kosaraju_scans": 1264920,
+      "tarjan_scans": 632460,
+      "scan_saving_fraction": 0.5,
+      "kosaraju_time_ms": 141.986,
+      "tarjan_time_ms": 45.319,
+      "tarjan_over_kosaraju_time": 0.3191793557111265
+    },
+    {
+      "original_n": 100000,
+      "original_m": 400000,
+      "density": "sparse",
+      "components": 3923,
+      "condensed_edges": 4331,
+      "critical_weight": 4977,
+      "kosaraju_scans": 800000,
+      "tarjan_scans": 400000,
+      "scan_saving_fraction": 0.5,
+      "kosaraju_time_ms": 144.307,
+      "tarjan_time_ms": 95.327,
+      "tarjan_over_kosaraju_time": 0.6605847256196858
+    },
+    {
+      "original_n": 100000,
+      "original_m": 2000000,
+      "density": "dense",
+      "components": 1,
+      "condensed_edges": 0,
+      "critical_weight": 0,
+      "kosaraju_scans": 4000000,
+      "tarjan_scans": 2000000,
+      "scan_saving_fraction": 0.5,
+      "kosaraju_time_ms": 711.156,
+      "tarjan_time_ms": 170.297,
+      "tarjan_over_kosaraju_time": 0.2394650400193488
+    }
+  ],
+  "scheduler_fixture": {
+    "path": "data/bonus-scheduler.txt",
+    "sha256": "fa50670828922cbd50a93a2d0716e866a672ccb72ae008ef22a9cbb8cf35703f",
+    "components": {
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "B": [
+        3,
+        4
+      ],
+      "C": [
+        5
+      ],
+      "D": [
+        6,
+        7
+      ],
+      "E": [
+        8
+      ]
+    },
+    "edges": [
+      {
+        "from": "A",
+        "to": "B",
+        "weight": 7
+      },
+      {
+        "from": "A",
+        "to": "C",
+        "weight": 3
+      },
+      {
+        "from": "B",
+        "to": "C",
+        "weight": 5
+      },
+      {
+        "from": "B",
+        "to": "D",
+        "weight": 6
+      },
+      {
+        "from": "C",
+        "to": "D",
+        "weight": 8
+      }
+    ],
+    "critical_path": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "critical_weight": 20,
+    "weight_policy": "Maximum weight per ordered SCC pair; internal SCC edges contribute zero.",
+    "verification": "Independent transitive closure, edge aggregation, exhaustive source-to-sink paths."
+  }
+}
