@@ -1,73 +1,73 @@
 
 === n=1000, m=4000, sparse ===
-Kruskal            result=147970       median=4.764 ms
-Prim               result=147970       median=5.496 ms
-Kosaraju           result=27           median=3.213 ms
-Kahn               result=1000         median=1.286 ms
-DagShortestPath    result=396274       median=3.744 ms
+Kruskal            result=147970       median=6.567 ms
+Prim               result=147970       median=5.022 ms
+Kosaraju           result=27           median=2.735 ms
+Kahn               result=1000         median=1.056 ms
+DagShortestPath    result=396274       median=2.269 ms
 
 === n=1000, m=20000, dense ===
-Kruskal            result=30363        median=9.802 ms
-Prim               result=30363        median=9.950 ms
-Kosaraju           result=1            median=7.497 ms
-Kahn               result=1000         median=2.491 ms
-DagShortestPath    result=252411       median=2.161 ms
+Kruskal            result=30363        median=7.943 ms
+Prim               result=30363        median=7.934 ms
+Kosaraju           result=1            median=3.394 ms
+Kahn               result=1000         median=1.159 ms
+DagShortestPath    result=252411       median=1.739 ms
 
 === n=3162, m=12648, sparse ===
-Kruskal            result=468911       median=9.832 ms
-Prim               result=468911       median=11.489 ms
-Kosaraju           result=137          median=8.211 ms
-Kahn               result=3162         median=1.280 ms
-DagShortestPath    result=1271911      median=5.356 ms
+Kruskal            result=468911       median=6.075 ms
+Prim               result=468911       median=3.744 ms
+Kosaraju           result=137          median=2.462 ms
+Kahn               result=3162         median=1.032 ms
+DagShortestPath    result=1271911      median=1.859 ms
 
 === n=3162, m=63240, dense ===
-Kruskal            result=97589        median=23.237 ms
-Prim               result=97589        median=31.333 ms
-Kosaraju           result=1            median=7.274 ms
-Kahn               result=3162         median=1.436 ms
-DagShortestPath    result=723157       median=2.680 ms
+Kruskal            result=97589        median=22.148 ms
+Prim               result=97589        median=26.456 ms
+Kosaraju           result=1            median=7.672 ms
+Kahn               result=3162         median=2.587 ms
+DagShortestPath    result=723157       median=4.723 ms
 
 === n=10000, m=40000, sparse ===
-Kruskal            result=1486139      median=18.137 ms
-Prim               result=1486139      median=15.534 ms
-Kosaraju           result=373          median=6.931 ms
-Kahn               result=10000        median=1.986 ms
-DagShortestPath    result=3941828      median=3.542 ms
+Kruskal            result=1486139      median=20.492 ms
+Prim               result=1486139      median=19.514 ms
+Kosaraju           result=373          median=6.698 ms
+Kahn               result=10000        median=2.303 ms
+DagShortestPath    result=3941828      median=4.579 ms
 
 === n=10000, m=200000, dense ===
-Kruskal            result=309550       median=77.282 ms
-Prim               result=309550       median=168.240 ms
-Kosaraju           result=1            median=32.180 ms
-Kahn               result=10000        median=7.214 ms
-DagShortestPath    result=2381342      median=12.008 ms
+Kruskal            result=309550       median=42.915 ms
+Prim               result=309550       median=129.316 ms
+Kosaraju           result=1            median=35.954 ms
+Kahn               result=10000        median=11.135 ms
+DagShortestPath    result=2381342      median=16.232 ms
 
 === n=31623, m=126492, sparse ===
-Kruskal            result=4715515      median=32.854 ms
-Prim               result=4715515      median=60.778 ms
-Kosaraju           result=1188         median=27.723 ms
-Kahn               result=31623        median=5.700 ms
-DagShortestPath    result=12551891     median=13.995 ms
+Kruskal            result=4715515      median=36.132 ms
+Prim               result=4715515      median=68.457 ms
+Kosaraju           result=1188         median=28.596 ms
+Kahn               result=31623        median=7.225 ms
+DagShortestPath    result=12551891     median=18.691 ms
 
 === n=31623, m=632460, dense ===
-Kruskal            result=968517       median=172.826 ms
-Prim               result=968517       median=530.764 ms
-Kosaraju           result=1            median=162.011 ms
-Kahn               result=31623        median=34.034 ms
-DagShortestPath    result=7376612      median=58.574 ms
+Kruskal            result=968517       median=197.192 ms
+Prim               result=968517       median=592.956 ms
+Kosaraju           result=1            median=216.634 ms
+Kahn               result=31623        median=33.858 ms
+DagShortestPath    result=7376612      median=74.292 ms
 
 === n=100000, m=400000, sparse ===
-Kruskal            result=15012094     median=127.864 ms
-Prim               result=15012094     median=324.360 ms
-Kosaraju           result=3923         median=165.096 ms
-Kahn               result=100000       median=41.203 ms
-DagShortestPath    result=40096539     median=65.615 ms
+Kruskal            result=15012094     median=137.653 ms
+Prim               result=15012094     median=313.072 ms
+Kosaraju           result=3923         median=144.254 ms
+Kahn               result=100000       median=46.687 ms
+DagShortestPath    result=40096539     median=76.932 ms
 
 === n=100000, m=2000000, dense ===
-Kruskal            result=3056681      median=543.450 ms
-Prim               result=3056681      median=2388.564 ms
-Kosaraju           result=1            median=716.896 ms
-Kahn               result=100000       median=162.421 ms
-DagShortestPath    result=23512087     median=217.691 ms
+Kruskal            result=3056681      median=457.886 ms
+Prim               result=3056681      median=2419.650 ms
+Kosaraju           result=1            median=697.304 ms
+Kahn               result=100000       median=130.710 ms
+DagShortestPath    result=23512087     median=260.683 ms
 
 BENCHMARK PASSED: all 10 configurations.
 50 rows saved to: /home/adilzhan-kuandykov/AITU-DAA-A3/results/results.csv

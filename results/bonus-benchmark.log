@@ -1,0 +1,100 @@
+
+=== BONUS n=1000, m=4000, sparse ===
+Kosaraju           result=27       median=4.073 ms scans=8000 depth=626
+Tarjan             result=27       median=1.184 ms scans=4000 depth=626
+Condensation       result=28       median=4.843 ms scans=4000 depth=0
+DagLongestPath     result=3053     median=0.084 ms scans=28 depth=0
+Full SCC partitions match; Tarjan/Kosaraju median time = 0.291.
+Condensation: 27 vertices, 28 edges; critical path [20, 19, 15, 6, 5], weight 3053.
+
+=== BONUS n=1000, m=20000, dense ===
+Kosaraju           result=1        median=4.519 ms scans=40000 depth=916
+Tarjan             result=1        median=1.235 ms scans=20000 depth=916
+Condensation       result=0        median=3.023 ms scans=20000 depth=0
+DagLongestPath     result=0        median=0.010 ms scans=0 depth=0
+Full SCC partitions match; Tarjan/Kosaraju median time = 0.273.
+Condensation: 1 vertices, 0 edges; critical path [0], weight 0.
+
+=== BONUS n=3162, m=12648, sparse ===
+Kosaraju           result=137      median=3.971 ms scans=25296 depth=1871
+Tarjan             result=137      median=1.603 ms scans=12648 depth=1871
+Condensation       result=149      median=1.951 ms scans=12648 depth=0
+DagLongestPath     result=2992     median=0.770 ms scans=149 depth=0
+Full SCC partitions match; Tarjan/Kosaraju median time = 0.404.
+Condensation: 137 vertices, 149 edges; critical path [105, 104, 69, 63, 20], weight 2992.
+
+=== BONUS n=3162, m=63240, dense ===
+Kosaraju           result=1        median=16.447 ms scans=126480 depth=2920
+Tarjan             result=1        median=3.885 ms scans=63240 depth=2920
+Condensation       result=0        median=9.589 ms scans=63240 depth=0
+DagLongestPath     result=0        median=0.012 ms scans=0 depth=0
+Full SCC partitions match; Tarjan/Kosaraju median time = 0.236.
+Condensation: 1 vertices, 0 edges; critical path [0], weight 0.
+
+=== BONUS n=10000, m=40000, sparse ===
+Kosaraju           result=373      median=14.106 ms scans=80000 depth=5925
+Tarjan             result=373      median=3.444 ms scans=40000 depth=5925
+Condensation       result=409      median=4.647 ms scans=40000 depth=0
+DagLongestPath     result=3779     median=0.415 ms scans=409 depth=0
+Full SCC partitions match; Tarjan/Kosaraju median time = 0.244.
+Condensation: 373 vertices, 409 edges; critical path [352, 278, 266, 189, 46, 45], weight 3779.
+
+=== BONUS n=10000, m=200000, dense ===
+Kosaraju           result=1        median=42.547 ms scans=400000 depth=9217
+Tarjan             result=1        median=13.853 ms scans=200000 depth=9217
+Condensation       result=0        median=17.193 ms scans=200000 depth=0
+DagLongestPath     result=0        median=0.006 ms scans=0 depth=0
+Full SCC partitions match; Tarjan/Kosaraju median time = 0.326.
+Condensation: 1 vertices, 0 edges; critical path [0], weight 0.
+
+=== BONUS n=31623, m=126492, sparse ===
+Kosaraju           result=1188     median=28.455 ms scans=252984 depth=18671
+Tarjan             result=1188     median=8.800 ms scans=126492 depth=18671
+Condensation       result=1299     median=13.909 ms scans=126492 depth=0
+DagLongestPath     result=3952     median=1.159 ms scans=1299 depth=0
+Full SCC partitions match; Tarjan/Kosaraju median time = 0.309.
+Condensation: 1188 vertices, 1299 edges; critical path [687, 686, 586, 548, 420, 188], weight 3952.
+
+=== BONUS n=31623, m=632460, dense ===
+Kosaraju           result=1        median=141.986 ms scans=1264920 depth=29073
+Tarjan             result=1        median=45.319 ms scans=632460 depth=29073
+Condensation       result=0        median=45.239 ms scans=632460 depth=0
+DagLongestPath     result=0        median=0.013 ms scans=0 depth=0
+Full SCC partitions match; Tarjan/Kosaraju median time = 0.319.
+Condensation: 1 vertices, 0 edges; critical path [0], weight 0.
+
+=== BONUS n=100000, m=400000, sparse ===
+Kosaraju           result=3923     median=144.307 ms scans=800000 depth=59394
+Tarjan             result=3923     median=95.327 ms scans=400000 depth=59394
+Condensation       result=4331     median=75.859 ms scans=400000 depth=0
+DagLongestPath     result=4977     median=1.807 ms scans=4331 depth=0
+Full SCC partitions match; Tarjan/Kosaraju median time = 0.661.
+Condensation: 3923 vertices, 4331 edges; critical path [2293, 2292, 2291, 1933, 1394, 564, 563, 562], weight 4977.
+
+=== BONUS n=100000, m=2000000, dense ===
+Kosaraju           result=1        median=711.156 ms scans=4000000 depth=91920
+Tarjan             result=1        median=170.297 ms scans=2000000 depth=91920
+Condensation       result=0        median=180.092 ms scans=2000000 depth=0
+DagLongestPath     result=0        median=0.006 ms scans=0 depth=0
+Full SCC partitions match; Tarjan/Kosaraju median time = 0.239.
+Condensation: 1 vertices, 0 edges; critical path [0], weight 0.
+
+=== Scheduler demo: data/bonus-scheduler.txt ===
+Component 0 = [6, 7]
+Component 1 = [5]
+Component 2 = [3, 4]
+Component 3 = [0, 1, 2]
+Component 4 = [8]
+Condensation edges (maximum weight for each SCC pair):
+  3 -> 2 (7)
+  3 -> 1 (3)
+  2 -> 1 (5)
+  2 -> 0 (6)
+  1 -> 0 (8)
+Critical component path: [3, 2, 1, 0]
+Original vertex groups: [[0, 1, 2], [3, 4], [5], [6, 7]]
+Critical path weight: 20 = 7 + 5 + 8
+Weights describe inter-component transitions; internal SCC edges are excluded.
+
+BONUS BENCHMARK PASSED: all 10 configurations and scheduler demo.
+40 rows saved to: /home/adilzhan-kuandykov/AITU-DAA-A3/results/bonus.csv

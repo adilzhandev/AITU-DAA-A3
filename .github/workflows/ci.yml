@@ -24,3 +24,5 @@ jobs:
         run: mvn --batch-mode --no-transfer-progress clean verify
       - name: Check all five algorithms against reference values
         run: java -jar target/graph-benchmark.jar --smoke
+      - name: Check both bonuses and the scheduler critical path
+        run: java -cp target/graph-benchmark.jar benchmark.BonusBenchmark --smoke

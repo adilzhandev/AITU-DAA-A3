@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-23T08:02:06.229911+00:00",
+  "generated_at_utc": "2026-10-23T18:09:43.101956+00:00",
   "command": "java -Xms256m -Xmx3g -jar target/graph-benchmark.jar",
   "java_options": [
     "-Xms256m",
@@ -28,10 +28,13 @@
   },
   "configurations": 10,
   "csv_rows": 50,
-  "csv_sha256": "e8e68dda988854dcd23b3d20df6e40fe10867747201a5c4aafee73f4d55a271c",
+  "csv_sha256": "c6adc98c26d8f3e4c2c959eeda5602ea52bc9662ead382e3d3e4337e30ef50fc",
+  "bonus_command": "java -Xms256m -Xmx3g -cp target/graph-benchmark.jar benchmark.BonusBenchmark",
+  "bonus_csv_rows": 40,
+  "bonus_csv_sha256": "b98cb13a6ce60e18afe75d0469c1e200d59adcad38e4942b235ab4902ddac809",
   "os_pretty_name": "Ubuntu 26.04.1 LTS",
   "tests": {
-    "tests": 81,
+    "tests": 122,
     "failures": 0,
     "errors": 0,
     "skipped": 0
