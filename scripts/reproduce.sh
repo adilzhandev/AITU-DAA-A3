@@ -16,6 +16,7 @@ command -v "$REPRO_PYTHON" >/dev/null
 mvn -B clean verify
 mkdir -p results
 java -Xms256m -Xmx3g -jar target/graph-benchmark.jar | tee results/benchmark.log
+java -Xms256m -Xmx3g -cp target/graph-benchmark.jar benchmark.BonusBenchmark | tee results/bonus-benchmark.log
 
 "$REPRO_PYTHON" - <<'PY'
 import csv
@@ -58,6 +59,10 @@ with Path('results/results.csv').open(newline='') as stream:
     rows = list(csv.DictReader(stream))
 if len(rows) != 50:
     raise RuntimeError(f'Expected 50 benchmark rows, found {len(rows)}')
+with Path('results/bonus.csv').open(newline='') as stream:
+    bonus_rows = list(csv.DictReader(stream))
+if len(bonus_rows) != 40:
+    raise RuntimeError(f'Expected 40 bonus rows, found {len(bonus_rows)}')
 
 metadata = {
     'generated_at_utc': datetime.now(timezone.utc).isoformat(),
@@ -78,6 +83,9 @@ metadata = {
     'configurations': 10,
     'csv_rows': len(rows),
     'csv_sha256': hashlib.sha256(Path('results/results.csv').read_bytes()).hexdigest(),
+    'bonus_command': 'java -Xms256m -Xmx3g -cp target/graph-benchmark.jar benchmark.BonusBenchmark',
+    'bonus_csv_rows': len(bonus_rows),
+    'bonus_csv_sha256': hashlib.sha256(Path('results/bonus.csv').read_bytes()).hexdigest(),
     'os_pretty_name': platform.freedesktop_os_release().get('PRETTY_NAME', platform.platform()) if Path('/etc/os-release').exists() else platform.platform(),
     'tests': totals,
 }
@@ -87,5 +95,6 @@ print('Recorded environment and test totals in results/environment.json')
 PY
 
 "$REPRO_PYTHON" scripts/plot_results.py
+"$REPRO_PYTHON" scripts/plot_bonus.py
 "$REPRO_PYTHON" scripts/build_report.py
-echo 'Reproduction complete: results/results.csv, results/plots/, and output/pdf/REPORT.pdf'
+echo 'Reproduction complete: mandatory and bonus CSVs, five figures, and output/pdf/REPORT.pdf'
