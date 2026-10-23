@@ -9,7 +9,9 @@ package metrics;
  * passes, Kahn's outgoing-edge removals, or the DAG relaxation pass.
  * Building a transpose, computing initial in-degrees, and the separate Kahn
  * call made by DAG shortest paths are excluded. Thus a DAG has m scans in
- * either Kahn or relaxation, and Kosaraju has 2m scans.</p>
+ * either Kahn or relaxation, and Kosaraju has 2m scans. Tarjan scans each edge
+ * once. Condensation counts its contraction scan separately from its internal
+ * Tarjan call; DAG longest paths counts only the maximum-relaxation pass.</p>
  *
  * <p>comparisons counts weight-comparator calls in sorting and the priority
  * queue. dsuOps is find calls plus successful unions. maxDepth is the largest
