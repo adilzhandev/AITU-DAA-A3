@@ -1,0 +1,39 @@
+{
+  "generated_at_utc": "2026-10-23T08:02:06.229911+00:00",
+  "command": "java -Xms256m -Xmx3g -jar target/graph-benchmark.jar",
+  "java_options": [
+    "-Xms256m",
+    "-Xmx3g"
+  ],
+  "java": "openjdk version \"17.0.20.1\" 2026-08-18\nOpenJDK Runtime Environment (build 17.0.20.1+1-1-26.04-Ubuntu)\nOpenJDK 64-Bit Server VM (build 17.0.20.1+1-1-26.04-Ubuntu, mixed mode, sharing)",
+  "maven": "Apache Maven 3.9.12\nMaven home: /usr/share/maven\nJava version: 17.0.20.1, vendor: Ubuntu, runtime: /usr/lib/jvm/java-17-openjdk-amd64\nDefault locale: en, platform encoding: UTF-8\nOS name: \"linux\", version: \"7.0.0-38-generic\", arch: \"amd64\", family: \"unix\"",
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "machine": "x86_64",
+  "processor": "Intel(R) N100",
+  "logical_cpus": 4,
+  "seed": 42,
+  "runs_per_algorithm": 5,
+  "warmup_runs": 0,
+  "graph_sizes": [
+    1000,
+    3162,
+    10000,
+    31623,
+    100000
+  ],
+  "densities": {
+    "sparse": 4,
+    "dense": 20
+  },
+  "configurations": 10,
+  "csv_rows": 50,
+  "csv_sha256": "e8e68dda988854dcd23b3d20df6e40fe10867747201a5c4aafee73f4d55a271c",
+  "os_pretty_name": "Ubuntu 26.04.1 LTS",
+  "tests": {
+    "tests": 81,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}
