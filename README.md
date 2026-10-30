@@ -166,7 +166,3 @@ git archive --format=zip --prefix=DAA_Assignment3_Adilzhan_Kuandykov_SE-2526/ --
 ```
 
 Upload that ZIP to Moodle. Build outputs, virtual environments, IDE settings and the local `.git` directory are excluded from the archive.
-
-## AI-use acknowledgement
-
-The student supplied the original graph and algorithm implementations. OpenAI Codex assisted with auditing the assignment requirements, existing code and input handling, strengthening tests, improving build and benchmark methodology, generating and interpreting the charts, preparing the report and reproduction scripts, and organizing the submission. The bonus implementation also used Codex assistance for iterative Tarjan, condensation, DAG longest paths, their tests, and the bonus benchmark. This assistance included code and documentation changes. The student is responsible for reviewing the final work and explaining the algorithms, measurements, and conclusions at the defense.
